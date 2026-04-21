@@ -2,6 +2,8 @@
 
 TypeScript SDK for the E3D API and wallet-side E3DToken swap helpers.
 
+**[Full documentation → docs.e3d.ai](https://docs.e3d.ai)**
+
 ## Install
 
 ```bash
@@ -44,7 +46,9 @@ const token = await e3d.tokens.getTokenProfile('0x6488861b401F427D13B6619C77C297
 
 - JavaScript examples live in `examples/`
 - Python examples live in `examples/python/`
+- Go examples live in `examples/go/`
 - The Python examples use only the standard library and are safe to run without extra dependencies
+- The Go examples use only the Go standard library and are safe to run without extra dependencies
 
 ## Swap example
 
