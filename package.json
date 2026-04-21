@@ -1,0 +1,44 @@
+{
+  "name": "e3d-sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for the E3D API and wallet-side E3DToken swap helpers.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "example:quick-start": "node examples/quick-start.mjs",
+    "example:token-profile": "node examples/token-profile.mjs",
+    "example:stories": "node examples/stories.mjs",
+    "example:theses": "node examples/theses.mjs",
+    "example:token-intelligence": "node examples/token-intelligence.mjs",
+    "example:swap-quote-buy": "node examples/swap-quote-buy-e3d.mjs",
+    "example:swap-quote-sell": "node examples/swap-quote-sell-e3d.mjs",
+    "example:swap-build": "node examples/swap-build-transaction.mjs",
+    "prepare": "npm run build"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ethers": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.9.3"
+  }
+}
