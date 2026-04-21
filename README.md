@@ -40,6 +40,12 @@ const token = await e3d.tokens.getTokenProfile('0x6488861b401F427D13B6619C77C297
 - `tokenIntelligence` - counterparties and batch metadata
 - `auth` - API key management
 
+## Examples
+
+- JavaScript examples live in `examples/`
+- Python examples live in `examples/python/`
+- The Python examples use only the standard library and are safe to run without extra dependencies
+
 ## Swap example
 
 ```ts

@@ -31,6 +31,13 @@ These examples are designed to be run after `npm run build`.
 - `swap-build-transaction.mjs` - build a raw swap transaction payload
 - `swap-quote-sell-e3d.mjs` - build a sell-side quote for E3D
 
+## Python examples
+
+- `python/quick_start.py` - load `/openapi` and `/rate`
+- `python/token_profile.py` - fetch a token profile bundle
+- `python/stories.py` - list stories and fetch story addresses
+- `python/swap_quote_buy.py` - build a local buy-side quote helper
+
 ## Notes
 
 - Swap examples are intentionally quote/build oriented so they are safer to inspect.
