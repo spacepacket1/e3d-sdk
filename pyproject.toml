@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "e3d-sdk"
+version = "0.1.0"
+description = "Python client for the E3D blockchain intelligence API"
+readme = "examples/python/README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+keywords = ["blockchain", "crypto", "defi", "on-chain", "intelligence", "api"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://docs.e3d.ai"
+Documentation = "https://docs.e3d.ai/sdk/python"
+Repository = "https://github.com/spacepacket1/e3d-sdk"
+
+[tool.setuptools.packages.find]
+where = ["python"]
+
+[tool.setuptools.package-dir]
+"" = "python"

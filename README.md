@@ -20,12 +20,9 @@ npm run build
 ## Quick start
 
 ```ts
-import { E3D } from './dist/index.js';
+import { E3D } from 'e3d-sdk';
 
-const e3d = new E3D({
-  baseUrl: 'https://e3d.ai/apitest',
-  apiKey: process.env.E3D_API_KEY,
-});
+const e3d = new E3D({ apiKey: process.env.E3D_API_KEY });
 
 const openApi = await e3d.discovery.getOpenApi();
 const rate = await e3d.discovery.getRate();

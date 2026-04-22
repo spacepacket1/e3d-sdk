@@ -38,6 +38,13 @@ These examples are designed to be run after `npm run build`.
 - `python/stories.py` - list stories and fetch story addresses
 - `python/swap_quote_buy.py` - build a local buy-side quote helper
 
+## Go examples
+
+- `go/quick_start` - load `/openapi` and `/rate`
+- `go/token_profile` - fetch a token profile bundle
+- `go/stories` - list stories and fetch story addresses
+- `go/swap_quote_buy` - build a local buy-side quote helper
+
 ## Notes
 
 - Swap examples are intentionally quote/build oriented so they are safer to inspect.

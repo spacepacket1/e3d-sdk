@@ -1,8 +1,4 @@
-"""Minimal E3D API helper for Python examples.
-
-This keeps the examples dependency-free by using urllib from the standard
-library instead of an external HTTP client.
-"""
+"""E3D API client — zero external dependencies, stdlib only."""
 
 from __future__ import annotations
 

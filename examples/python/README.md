@@ -15,7 +15,7 @@ python3 swap_quote_buy.py
 
 ## Environment variables
 
-- `E3D_BASE_URL` - defaults to `https://e3d.ai/apitest`
+- `E3D_BASE_URL` - defaults to `https://e3d.ai/api`
 - `E3D_API_KEY` - optional API key for authenticated endpoints
 - `E3D_API_KEY_HEADER` - defaults to `x-api-key`
 - `E3D_TIMEOUT_MS` - request timeout in milliseconds

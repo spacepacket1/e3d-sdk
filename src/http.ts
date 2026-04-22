@@ -62,7 +62,7 @@ export class HttpClient {
   private readonly userAgent: string | undefined;
 
   constructor(options: E3DClientOptions = {}) {
-    this.baseUrl = String(options.baseUrl || process.env.E3D_BASE_URL || 'https://e3d.ai/apitest').replace(/\/+$/, '');
+    this.baseUrl = String(options.baseUrl || process.env.E3D_BASE_URL || 'https://e3d.ai/api').replace(/\/+$/, '');
     this.apiKey = options.apiKey || process.env.E3D_API_KEY;
     this.apiKeyHeader = String(options.apiKeyHeader || process.env.E3D_API_KEY_HEADER || 'x-api-key');
     this.timeoutMs = options.timeoutMs || Number(process.env.E3D_TIMEOUT_MS || 0) || 0;
