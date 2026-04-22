@@ -7,7 +7,8 @@ TypeScript SDK for the E3D API and wallet-side E3DToken swap helpers.
 ## Install
 
 ```bash
-npm install e3d-sdk
+npm install e3d-sdk      # JavaScript / TypeScript
+pip install e3d-sdk      # Python
 ```
 
 ## Build
