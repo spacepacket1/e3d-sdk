@@ -34,6 +34,7 @@ const token = await e3d.tokens.getTokenProfile('0x6488861b401F427D13B6619C77C297
 
 - `discovery` - schema, rate, newsletter
 - `tokens` - token discovery, metadata, price history, token page bundle
+- `payments` - credit quotes, caller-controlled transfers, and purchase confirmation ([guide](docs/payments.md))
 - `swap` - wallet-side E3D trading helpers
 - `stories` - story feeds and story-linked discovery helpers
 - `theses` - thesis feed and annotation/candidate helpers
