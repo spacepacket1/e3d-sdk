@@ -4,9 +4,12 @@ from __future__ import annotations
 
 import json
 import os
-from dataclasses import dataclass
-from typing import Any, Dict, Optional
+from dataclasses import dataclass, field
+from typing import TYPE_CHECKING, Any, Dict, Optional
 from urllib import parse, request, error
+
+if TYPE_CHECKING:
+    from .payments import PaymentsModule
 
 
 @dataclass
@@ -15,6 +18,12 @@ class E3DClient:
     api_key: Optional[str] = os.getenv("E3D_API_KEY")
     api_key_header: str = os.getenv("E3D_API_KEY_HEADER", "x-api-key")
     timeout: int = int(os.getenv("E3D_TIMEOUT_MS", "0") or 0) // 1000 or 30
+    payments: "PaymentsModule" = field(init=False)
+
+    def __post_init__(self) -> None:
+        from .payments import PaymentsModule
+
+        self.payments = PaymentsModule(self)
 
     def _build_url(self, path: str, query: Optional[Dict[str, Any]] = None) -> str:
         base = self.base_url.rstrip("/")

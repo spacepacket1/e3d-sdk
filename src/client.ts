@@ -5,6 +5,7 @@ import { TokenIntelligenceModule } from './tokenIntelligence.js';
 import { StoriesModule } from './stories.js';
 import { ThesesModule } from './theses.js';
 import { AuthModule } from './auth.js';
+import { PaymentsModule } from './payments.js';
 import { SwapModule, type SwapModuleOptions } from './swap.js';
 import type { E3DClientOptions } from './types.js';
 
@@ -21,6 +22,7 @@ export class E3D {
   readonly theses: ThesesModule;
   readonly tokenIntelligence: TokenIntelligenceModule;
   readonly auth: AuthModule;
+  readonly payments: PaymentsModule;
 
   constructor(options: E3DOptions = {}) {
     this.http = new HttpClient(options);
@@ -31,5 +33,6 @@ export class E3D {
     this.theses = new ThesesModule(this.http);
     this.tokenIntelligence = new TokenIntelligenceModule(this.http);
     this.auth = new AuthModule(this.http);
+    this.payments = new PaymentsModule(this.http);
   }
 }
